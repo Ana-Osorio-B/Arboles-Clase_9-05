@@ -1,1 +1,35 @@
-# Arboles-Clase_9-05
+# Árboles Clase 9 de mayo
+## Árboles de Máxima Verosimilitud
+
+### Sin Particiones
+![Arbol_unpartitioned](https://github.com/Ana-Osorio-B/Arboles-Clase_9-05/blob/main/Arbol_unpartitioned.png)
+
+El árbol presentado fue realizado con IQTREE y sin indicar particiones de genes. Para enraizar se usó el midpoint root. El grupo más alejado en el árbol conforma un clado de peces actinopterigios, con cuatro especies, donde *Lepisosteus oculatos* se separa antes de las demás especies del clado, por otro lado *Oreochromis niloticus* y *Takifugu rubripes* se organizan como especies hermanas en este árbol. Todos los nodos del clado tienen soporte de 100.
+
+Pasando al clado con más especies, el linaje con más diferencias es *Calloorhinchus milii*, un condrictio, esta especie presenta la mayor tasa de sustituciones respecto a las otras especies y tiene un soporte de 100. Seguido a esta, *Latimeria chalumnae* se separa previo al clado de los peces pulmonados y el clado de tetrápodos (13 especies). El clado de los peces pulmonados tienen más sustituciones por sitio que el de los tetrápodos, y en él, *Lepidosiren paradoxa* y *Protopterus annectens* son especies hermanas. 
+
+Dentro del grupo de tetrápodos, la especie más lejana es *Silurana tropicalis*, un anfibio, y de allí hay una separación nuevamente en dos grupos, un clado de reptiles y aves, y otro clado de mamíferos y marsupiales. Al observar el primero de ellos, los linajes más alejados son *Pelodiscus sinenesis* y *Anolis carolinensis*, ambos reptiles, y luego en un grupo monofilético están tres aves, *Taeniopygia guttata*, *Meleagris gallopavo* y *Gallus gallus*, estas dos últimas como hermanas. Es importante resaltar que entre *Anolis carolinensis* y las aves el soporte de Bootstrap no refleja gran confiabilidad.
+
+Por último, tenemos el grupo monofilético donde la especie más lejana es *Ornithorhynchus anatinus*, de allí se separan los marsupiales (*Monodelphis domestica* y *Macropus eugenii*) y por último está el clado de mamíferos, con dos grupos de especies hermanas: *Loxodonta africana* con *Dasypus novemcinctus* y *Mus musculus* con *Homo sapiens*. Este clado tiene valores de bootstrap más variables, pues algunos de ellos son del 77 y 78, pese a ello siguen siendo valores de buen soporte.
+
+### Con Particiones
+![Arbol_partitioned](https://github.com/Ana-Osorio-B/Arboles-Clase_9-05/blob/main/partitioned.png)
+
+Este árbol se diferencia del primero al haberse realizado con indicaciones de las particiones de los genes. A grandes rasgos las separaciones de los taxa son iguales, vemos el clado de los actinopterigios (*Lepisosteus oculatos*, *Oreochromis niloticus*, *Takifugu rubripes*) como el más lejano, luego se separa *Calloorhinchus milii* y *Latimeria chalumnae*, y después finaliza el grupo de los peces con la separación del clado de los pulmonados (*Neoceratodus forsteri*, *Lepidosiren paradoxa* y *Protopterus annectens*). A partir de allí, en el clado de tetrápodos, el más lejano es *Silurana tropicalis*, seguido por el clado de aves y reptiles, luego tenemos el clado de marsupiales y por último el de mamíferos. De este modo el orden de los taxa en clados y la longitud de las ramas respecto al primer árbol (sin particiones) se mantiene igual.
+
+La única diferencia entre los árboles resultantes se encuentra en los valores de bootstrap, pues aquellos nodos donde el árbol sin particiones registraba valores de 77-78 (entre *Loxodonta africana* y *Dasypus novemcinctus* o *Canis lupus familiaris* y *Homo sapiens* junto a *Mus musculus*) o de 31 (entre *Anolis carolinensis* y el clado de aves), aumentaron levemente su soporte, mostrando ahora una confiabilidad del 85 y 45 respectivamente.
+
+### Coalescencia
+![Arbol_coalescencia](https://github.com/Ana-Osorio-B/Arboles-Clase_9-05/blob/main/Astral.png)
+
+A diferencia de los otros dos árboles, este último es un árbol de coalescencia, por lo que tiene en cuenta la variación dentro de la especie y sus genes. Su escala ya no representa sustituciones por sitio, sino la resolución que hubo en los árboles de genes.
+
+La organización de los taxas difiere al compararlo con los árboles de máxima verosimilitud. En el árbol coalescente hay una separación en dos grandes clados, el primero de ellos contiene a los tetrápodos, mientras que el segundo agrupa monofileticamente a todos los peces.
+
+En el clado de peces hay dos agrupamientos, en uno de ellos *Lepidosiren paradoxa* y *Protopterus annectens* se organizan como especies hermanas que comparten un ancestro común reciente con *Neoceratodus forsteri*, su soporte es de 1, es decir, 100%, lo que es coherente al todos estos pertenecer a los sarcopterigios. Por otro lado, *Oreochromis niloticus* y *Takifugu rubripes* se agrupan en un grupo monofilético, a partir de este, su ancestro más común lo comparten con *Danio rerio*, y al ir más atrás encontramos que estas 3 especies tienen un ancestro común con *Lepisosteus oculatus*. El soporte de los nodos mencionados es de 1, lo que brinda seguridad sobre la historia de estos peces, a los que conocemos como actinopterigios. Ya para terminar los actinopterigios compartes un ancestro con *Callorhinchus milii* y este a su vez cuenta con un ancestro que lo conecta a *Latimeria chalumnae*, cabe resaltar que el soporte de ambos empieza a ser bajo (0.6), por lo que su organización podría ser distinta.
+
+Pasando al clado de tetrápodos, nuevamente *Silurana tropicalis* es la especie más lejana del grupo, con un ancestro común más alejado. Los clados siguientes son el de reptiles y aves, y el de mamíferos y marsupiales, tal cual como se dividió en los árboles de máxima verosimilitud. El primero, tiene una variación, pues emparenta con más cercanía a las aves con el reptil *Pelodiscus sinensis* con un soporte alto (0,8), contrario a los árboles anteriores donde el ancestro más cercano lo tenían con *Anolis carolinensis*. Por coalescencia el Bootstrap indica mayor robustez en su agrupamiento.
+
+Como último análisis, tenemos el del clado de mamíferos, donde la especie *Ornithorhynchus anatinus* continúa mostrándose como la más alejada del grupo. Esta vez, la única especie hermana en mamíferos es *Canis lupus familiaris* con *Homo sapiens* con un soporte de 0.8 u 80. Es distinto al de verosimilitud, pues solía juntar a *Homo sapiens* con *Mus musculus*. Estas especies comparten un ancestro reciente con *Dasypues novemcinctus*, pero esta relación no está bien soportada ya que el agrupamiento solo se consigue un 0.5 o 50% de las veces. Eso a su vez se complementa con el bajo soporte del nodo inmediatamente anterior, que obtiene valor de 0.4 y asocia el clado con *Mus musculus*. La explicación de ello puede darse con la corta longitud de las ramas, indicando que su coalescencia parece ser reciente o contar con ILS.
+
+De este modo, vemos como pese a que gran parte de los grupos de especies hermanas o la agrupación de algunos clados se mantiene (tetrápodos, sarcopterigios, reptiles y aves, mamíferos y marsupiales), la organización inicial y dentro de esos grupos cambia, pues esta vez todos los peces se organizaron en un clado distintos y en los mamíferos cambiaron las relaciones.

@@ -19,7 +19,7 @@ Este árbol se diferencia del primero al haberse realizado con indicaciones de l
 
 La única diferencia entre los árboles resultantes se encuentra en los valores de bootstrap, pues aquellos nodos donde el árbol sin particiones registraba valores de 77-78 (entre *Loxodonta africana* y *Dasypus novemcinctus* o *Canis lupus familiaris* y *Homo sapiens* junto a *Mus musculus*) o de 31 (entre *Anolis carolinensis* y el clado de aves), aumentaron levemente su soporte, mostrando ahora una confiabilidad del 85 y 45 respectivamente.
 
-### Coalescencia
+## Árbol de Coalescencia
 ![Arbol_coalescencia](https://github.com/Ana-Osorio-B/Arboles-Clase_9-05/blob/main/Astral.png)
 
 A diferencia de los otros dos árboles, este último es un árbol de coalescencia, por lo que tiene en cuenta la variación dentro de la especie y sus genes. Su escala ya no representa sustituciones por sitio, sino la resolución que hubo en los árboles de genes.
